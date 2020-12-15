@@ -36,7 +36,7 @@ void update(void) {
 	kinc_compute_set_shader(&computeShader);
 	kinc_compute_set_texture(computeTexunit, &texture, KINC_COMPUTE_ACCESS_READ_WRITE);
 	kinc_compute_set_float(computeLocation, 0);
-	kinc_compute(texture.tex_width, texture.tex_height, 1);
+	kinc_compute(texture.tex_width / 16, texture.tex_height / 16, 1);
 
 	kinc_g4_set_pipeline(&pipeline);
 	kinc_matrix3x3_t matrix = kinc_matrix3x_rotation_z(0);
