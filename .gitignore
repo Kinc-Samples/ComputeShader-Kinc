@@ -1,4 +1,4 @@
 /build
-/Deployment/shader.frag
-/Deployment/shader.vert
-/Deployment/test.comp
+/Deployment/*.frag
+/Deployment/*.vert
+/Deployment/*.comp
